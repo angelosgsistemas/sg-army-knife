@@ -3,7 +3,7 @@
 	"displayName": "sg-army-knife",
 	"description": "Conjunto de utilidades para VS Code da SG Sistemas.",
 	"publisher": "WesleyNepomucneo",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"engines": {
 		"vscode": "^1.50.0"
 	},
