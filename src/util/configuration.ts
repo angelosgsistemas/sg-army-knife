@@ -1,6 +1,6 @@
 import { workspace } from 'vscode'
 
-export const servidores : string[] = ['232', '230']
+export const servidores : string[] = ['Harbour-Ubuntu', 'xHarbour', 'Harbourx64', 'Harbourx86', 'Extra']
 
 export const caminhoTrunk = workspace.getConfiguration().get('Repositório')
 

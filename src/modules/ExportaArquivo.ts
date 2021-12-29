@@ -7,12 +7,12 @@ const exportaArquivo = commands.registerCommand('sg-army-knife.exportaArquivo', 
     const file: TextEditor | undefined = window.activeTextEditor
 
     if(!file){
-        return 
-    }  
-    
+        return
+    }
+
     let caminhoServidor = workspace
         .getConfiguration()
-        .get(`Caminho ${await selecionaServidor()}`)
+        .get(`Caminho servidor ${await selecionaServidor()}`)
 
     let comando : string = `${caminhoTrunk}\\exportbranch\\bin\\exportbranch.ex -s `
 
@@ -20,7 +20,7 @@ const exportaArquivo = commands.registerCommand('sg-army-knife.exportaArquivo', 
 
     let pasta = pastasServidor
                     .filter( pasta => endereco.includes(pasta) )
-    
+
 
     comando += `${caminhoTrunk}\\${pasta[0]}; -d ${caminhoServidor} -f ${endereco[endereco.length -1 ]}`
 
@@ -30,10 +30,10 @@ const exportaArquivo = commands.registerCommand('sg-army-knife.exportaArquivo', 
 
 
 const exportaTodosArquivos = commands.registerCommand('sg-army-knife.exportaTodosArquivos', async () => {
-      
+
     const pastas : string[] | undefined = await window.showQuickPick( pastasServidor, {canPickMany: true} )
 
-    let caminhoServidor = workspace.getConfiguration().get(`Caminho ${await selecionaServidor()}`)
+    let caminhoServidor = workspace.getConfiguration().get(`Caminho servidor ${await selecionaServidor()}`)
 
     if (pastas) {
         let comando : string = `${caminhoTrunk}\\exportbranch\\bin\\exportbranch.ex -s `
@@ -44,7 +44,7 @@ const exportaTodosArquivos = commands.registerCommand('sg-army-knife.exportaTodo
 
         enviaComandoTerminalWindows(comando)
     }
-    
+
 })
 
 export { exportaArquivo, exportaTodosArquivos }

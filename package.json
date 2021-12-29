@@ -4,7 +4,7 @@
 	"icon": "images/sg.ico",
 	"description": "Conjunto de utilidades para VS Code da SG Sistemas.",
 	"publisher": "WesleyNepomuceno",
-	"version": "0.0.3",
+	"version": "1.0.0",
 	"engines": {
 		"vscode": "^1.50.0"
 	},
@@ -19,30 +19,42 @@
 	],
 	"main": "./out/extension.js",
 	"contributes": {
-
-		"configuration":{
+		"configuration": {
 			"title": "SGArmyKnife",
 			"properties": {
-				"Caminho 232":{
-					"type":"string",
-					"default":"\\192.168.1.232\\usuario\\trunk",
+				"Caminho servidor Harbour-Ubuntu": {
+					"type": "string",
+					"default": "\\192.168.1.232\\usuario\\trunk",
 					"description": "Caminho do repositório na raiz."
 				},
-				"Caminho 230":{
-					"type":"string",
-					"default":"\\192.168.1.230\\usuario\\trunk",
+				"Caminho servidor xHarbour": {
+					"type": "string",
+					"default": "\\192.168.1.230\\usuario\\trunk",
 					"description": "Caminho do repositório na raiz."
-				}
-				,
-				"Repositório":{
-					"type":"string",
-					"default":"T:",
+				},
+				"Caminho servidor Harbourx64": {
+					"type": "string",
+					"default": "\\192.168.1.231\\usuario\\trunk",
+					"description": "Caminho do repositório na raiz."
+				},
+				"Caminho servidor Harbourx86": {
+					"type": "string",
+					"default": "\\192.168.1.233\\usuario\\trunk",
+					"description": "Caminho do repositório na raiz."
+				},
+				"Caminho servidor Extra": {
+					"type": "string",
+					"default": "\\192.168.1.222\\usuario\\trunk",
+					"description": "Caminho do repositório na raiz."
+				},
+
+				"Repositório": {
+					"type": "string",
+					"default": "T:",
 					"description": "Caminho do repositório local na new."
 				}
 			}
 		},
-
-
 		"commands": [
 			{
 				"command": "sg-army-knife.exportaArquivo",
@@ -60,7 +72,6 @@
 				"command": "sg-army-knife.pegaindices",
 				"title": "SG: Pega Indice"
 			}
-
 		]
 	},
 	"scripts": {
@@ -72,13 +83,14 @@
 		"test": "node ./out/test/runTest.js"
 	},
 	"devDependencies": {
-		"@types/vscode": "^1.50.0",
 		"@types/glob": "^7.1.3",
 		"@types/mocha": "^8.0.0",
 		"@types/node": "^12.11.7",
-		"eslint": "^7.9.0",
+		"@types/vscode": "^1.50.0",
 		"@typescript-eslint/eslint-plugin": "^4.1.1",
 		"@typescript-eslint/parser": "^4.1.1",
+		"esbuild": "^0.14.9",
+		"eslint": "^7.9.0",
 		"glob": "^7.1.6",
 		"mocha": "^8.1.3",
 		"typescript": "^4.0.2",
