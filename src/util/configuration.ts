@@ -5,3 +5,5 @@ export const servidores : string[] = ['Harbour-Ubuntu', 'xHarbour', 'Harbourx64'
 export const caminhoTrunk = workspace.getConfiguration().get('Repositório')
 
 export const pastasServidor : string[] = ['new' ,'src', 'include','programas_externos', 'frente']
+
+export const opcoesdebuild : string[] = ['no rebuild' ,'rebuild']

@@ -1,0 +1,97 @@
+{
+    "compilacoes":[
+       {
+          "equipe":"fwh",
+          "libs":"\\src\\sgcurl\\fwhsgcurl.mkp \\src\\kanten\\fwhkantensocket.mkp \\src\\nanaimo\\fwhnanaimosocket.mkp \\src\\sgsocket\\fwhsgsocket.mkp \\src\\sgdbc\\fwhsgdbc.mkp \\src\\sgdbc\\fwhsgdbccommon.mkp \\src\\core\\fwhcore.mkp \\src\\jsonparser\\fwhjsonparser.mkp \\src\\util\\fwhutil.mkp \\src\\xhbcompat\\fwhxhbcompat.mkp \\src\\hbzebra\\fwhhbzebra.mkp libfwhpaf.mkp",
+          "produtos":[
+             {
+                "nome":"rjkretaguarda",
+                "comando":"fivewin\\rjkpdv\\rjkretaguarda.mkp --multithread"
+             },
+             {
+                "nome":"rjkpdv",
+                "comando":"fivewin\\rjkpdv\\rjkpdv.mkp --multithread"
+             },
+             {
+                "nome":"sgretaguarda",
+                "comando":"fivewin\\sgloja.mkp --multithread"
+             },
+             {
+                "nome":"sgpdv",
+                "comando":"fivewin\\getpdv\\getpdv.mkp --multithread"
+             },
+             {
+                "nome":"rjkfoods",
+                "comando":"fivewin\\rgourmet.mkp --multithread"
+             },
+             {
+                "nome":"sgfoods",
+                "comando":"fivewin\\sgr.mkp --multithread"
+             },
+             {
+                "nome":"sgmapafiscal",
+                "comando":"\\src\\SGMapaFiscal\\SGMapaFiscal.mkp --multithread"
+             },
+
+             {
+                "nome":"rjkmonitoramentonotas",
+                "comando":"\\src\\SGMonitoramentoNotas\\RJKMonitoramentoNotas.mkp --multithread"
+             },
+             {
+                "nome":"sgmonitoramentonotas",
+                "comando":"\\src\\SGMonitoramentoNotas\\SGMonitoramentoNotas.mkp --multithread"
+             },
+             {
+                "nome":"rjkmonitor",
+                "comando":"\\fivewin\\rjkMonitor\\rjkMonitor.mkp --multithread"
+             },
+             {
+                "nome":"getpdvmonitor",
+                "comando":"\\fivewin\\getpdvMonitor\\GetPDVMonitor.mkp --multithread"
+             },
+             {
+                "nome":"rjkcartaz",
+                "comando":"\\fivewin\\SGCartaz\\RJKCartaz.mkp --multithread"
+             },
+             {
+                "nome":"sgcartaz",
+                "comando":"\\fivewin\\SGCartaz\\SGCartaz.mkp --multithread"
+             },
+             {
+                "nome":"smt",
+                "comando":"\\fivewin\\SMT\\smt.mkp --multithread"
+             },
+             {
+               "nome":"smtfat",
+               "comando":"\\fivewin\\SMT\\smtfat.mkp --multithread"
+            },
+             {
+                "nome":"rmt",
+                "comando":"\\fivewin\\SMT\\rmt.mkp --multithread"
+             },
+             {
+               "nome":"rmtfat",
+               "comando":"\\fivewin\\SMT\\rmtfat.mkp --multithread"
+             }
+          ]
+       },
+       {
+          "equipe":"hrb",
+          "libs":"\\src\\util\\hutil.mkp \\src\\core\\hcore.mkp \\src\\calculadora\\hcalculadora.mkp \\src\\sgsocket\\hsgsocket.mkp \\src\\sgcurl\\hsgcurl.mkp \\src\\sgdbc\\hsgdbc.mkp \\src\\sgdbc\\hsgdbccommon.mkp \\src\\xhbcompat\\hxhbcompat.mkp \\src\\hbtipfixed\\hbtipfixed.mkp \\src\\kanten\\hkantensocket.mkp \\src\\nanaimo\\hnanaimosocket.mkp \\src\\jsonparser\\hjsonparser.mkp \\src\\sgclassimport\\hsgclassimport.mkp hhsgs.mkp",
+          "produtos":[
+             {
+                "nome":"hmenu",
+                "comando":"hmenu.mkp"
+             },
+             {
+                "nome":"hmenui",
+                "comando":"hmenui.mkp"
+             },
+             {
+                "nome":"hmenuac",
+                "comando":"hmenuac.mkp"
+             }
+          ]
+       }
+    ]
+ }
